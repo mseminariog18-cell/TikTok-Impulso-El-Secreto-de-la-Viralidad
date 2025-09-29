@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<HTML lang="es">
+    <head>
+        <title>Formulario de registro</title>
+        <title>Formulario</title>
+        <meta charset="utf=8">
+        <meta name="author"  content="Maria Seminario Gamarra">
+        <meta name="keywords" content="HTML, link, Formulario">
+        <meta name="description" content="Información del formulario">
+    </head>
+    <body>
+        <h1>Formulario de Registro</h1>
+        <!-- Primera agrupación: Información Personal -->
+        <form>
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label>Nombre: </label><br>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre"><br><br>
+
+                <label>Correo Electrónico: </label><br>
+                <input type="email" name="correo" placeholder="ejemplo@correo.com"><br><br>
+
+                <label>Fecha de nacimiento: </label><br>
+                <input type="date" name="nacimiento"><br><br>
+
+                <label>Género: </label><br>
+                <input type="radio" name="genero" value="Masculino" checked> Masculino <br>
+                <input type="radio" name="genero" value="Femenino"> Femenino <br><br>             
+
+            </fieldset>
+            <fieldset>
+                <legend>Mensaje y Confirmación</legend>
+                <label> Mensaje: </label><br>
+                <textarea rows="5" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+
+                <input type="checkbox" name="aceptacíón"> Acepto los términos y condiciones <br><br>
+                <input type="reset" name="reiniciar" value="Reiniciar">
+                <input type="submit" name="enviar" value="Enviar">
+            </fieldset>
+        </form>
+    </body>
+</HTML>    
