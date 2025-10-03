@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impulsa tus Videos de TikTok</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f2f2f2;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #ff2d55;
+      font-size: 2em;
+    }
+    h2 {
+      color: #00f2ea;
+      border-bottom: 2px solid #00f2ea;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin: 30px auto 20px;
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* ===== TARJETAS ===== */
+    .card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeIn 1s ease forwards;
+      border: 2px solid transparent;
+    }
+    .card:hover {
+      transform: scale(1.08) rotate(-1deg);
+      box-shadow: 0 10px 18px rgba(0,0,0,0.7);
+    }
+    .card-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #ff2d55;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    .features li {
+      margin: 6px 0;
+    }
+    .price {
+      font-size: 1.2em;
+      color: #00ff80;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    /* ===== EFECTO GLOW ===== */
+    .glow {
+      position: relative;
+      border: 2px solid transparent;
+      background-clip: padding-box;
+    }
+    .glow::before {
+      content: "";
+      position: absolute;
+      top: -3px; left: -3px; right: -3px; bottom: -3px;
+      border-radius: inherit;
+      background: linear-gradient(270deg, #ff2d55, #ff7f50, #00f2ea, #00ff80, #ff2d55);
+      background-size: 600% 600%;
+      animation: glowMove 6s linear infinite;
+      z-index: -1;
+    }
+    @keyframes glowMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* ===== CONTACTO ===== */
+    .contact-info {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background: #252525;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+    .contact-info h2 {
+      color: #ff2d55;
+      border: none;
+    }
+    .whatsapp {
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #00ff80;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff2d55, #00f2ea);
+      color: #fff;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    /* ===== ANIMACIÓN ENTRADA ===== */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Impulsa tus Videos de TikTok 🚀</h1>
+    <p style="text-align:center;">Más vistas, comentarios y compartidas en segundos.</p>
+
+    <h2>📦 Paquetes</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">⭐ Starter</div>
+        <ul class="features">
+          <li>2,000 vistas 👁️‍🗨️</li>
+          <li>200 comentarios 💬</li>
+          <li>200 compartidas 🔄</li>
+        </ul>
+        <div class="price">💵 S/3.00</div>
+      </div>
+
+      <div class="card glow">
+        <div class="card-title">🔥 Plus</div>
+        <ul class="features">
+          <li>5,000 vistas 👁️‍🗨️</li>
+          <li>500 comentarios 💬</li>
+          <li>500 compartidas 🔄</li>
+        </ul>
+        <div class="price">💵 S/6.00</div>
+      </div>
+
+      <div class="card glow">
+        <div class="card-title">🚀 Premium</div>
+        <ul class="features">
+          <li>10,000 vistas 👁️‍🗨️</li>
+          <li>1,000 comentarios 💬</li>
+          <li>1,000 compartidas 🔄</li>
+        </ul>
+        <div class="price">💵 S/10.00</div>
+      </div>
+    </div>
+
+    <h2>📊 Servicios Individuales</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">👁️ Vistas</div>
+        <ul class="features">
+          <li>2,000 vistas – S/2.00</li>
+          <li>5,000 vistas – S/4.50</li>
+          <li>10,000 vistas – S/8.00</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">💬 Comentarios</div>
+        <ul class="features">
+          <li>200 – S/0.20</li>
+          <li>500 – S/0.40</li>
+          <li>1,000 – S/0.75</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">🔄 Compartidas</div>
+        <ul class="features">
+          <li>200 – S/0.20</li>
+          <li>500 – S/0.40</li>
+          <li>1,000 – S/0.75</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <h2>📞 Contacto</h2>
+      <p>Haz tu pedido por WhatsApp:</p>
+      <p class="whatsapp">+51 999 428 045</p>
+      <a href="https://wa.me/51999428045" target="_blank" class="btn">Enviar WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
